@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo com EM</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body 
+        {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            font-size: 16px; /* Tamanho de fonte base */
+        }
+
+        header, nav ul, .intro, .about, footer 
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul
+        {
+            list-style: none;
+            background-color: #333;
+            text-align: center;
+            padding: 0.5em 0; /* Padding vertical baseado no tamanho da fonte do body */
+        }
+
+        nav li 
+        {
+            display: inline;
+            margin-right: 1em;
+        }
+
+        nav a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 1em; /* Mantém o tamanho da fonte consistente com o body */
+        }
+
+        .intro, .about
+        {
+            padding: 2em; /* Padding baseado no tamanho da fonte do body */
+        }
+
+        h1, h2
+        {
+            color: #333;
+        }
+
+        h1
+        {
+            font-size: 2.5em; /* Tamanho da fonte do h1 em relação ao body */
+        }
+
+        h2
+        {
+            font-size: 2em; /* Tamanho da fonte do h2 em relação ao body */
+        }
+
+        p 
+        {
+            margin-bottom: 1em; /* Margem baseada no tamanho da fonte do body */
+            font-size: 1em; /* Mantém o tamanho da fonte consistente com o body */
+        }
+
+        footer 
+        {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0; /* Padding baseado no tamanho da fonte do body */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) 
+        {
+            nav li 
+            {
+                display: block;
+                margin: 0;
+            }
+
+            .intro, .about 
+            {
+                padding: 1em; /* Reduz o padding em telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Bem-vindo ao Nosso Site</h1>
+            <p>Descubra mais sobre nossos serviços e especialidades. Estamos aqui para servir você!</p>
+        </section>
+        <section class="about">
+            <h2>Sobre Nós</h2>
+            <p>Conheça nossa história e nossa equipe. Comprometimento e qualidade definem nosso trabalho.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Empresa X. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

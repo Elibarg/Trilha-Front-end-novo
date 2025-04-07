@@ -1,7 +1,7 @@
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to Right, #8e9bd6 ,#7b8de0,#697fdf,#304dcf);
+    background: linear-gradient(to Right, #8e9bd6 ,#697fdf);
 }
 .container
 {
@@ -18,13 +18,16 @@ h3
     margin: 5px auto;
     width: 100%;
     padding: 5px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 p{
+    color: #123b6b;
     margin-bottom: 15px;
 }
 button
 {
-    background-color: #3250d3;
+    background-image: linear-gradient(135deg, #74EBD5 0%, #ACB6E5 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
     width: 100%;
     height: 50px;
