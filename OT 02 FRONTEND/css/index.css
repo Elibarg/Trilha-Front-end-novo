@@ -1,6 +1,7 @@
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to Right, #8e9bd6 ,#7b8de0,#697fdf,#304dcf);
 }
 .container
 {
@@ -10,7 +11,7 @@ body
 }
 h3
 {
-    color: #304dcf;
+    color: #123b6b;
 }
 .input
 {
