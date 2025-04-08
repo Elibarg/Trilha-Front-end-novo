@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Aplica um padding uniforme de 20px em todos os lados do elemento */
+        .padding-uniforme 
+        {
+            padding: 20px;
+        }
+
+        /* Especifica paddings diferentes para cada lado do elemento: topo (10px), direita (15px), fundo (20px), esquerda (25px) */
+        .padding-diferente 
+        {
+            padding: 10px 15px 20px 25px;
+        }
+
+        /* Define apenas o padding superior do elemento */
+        .padding-topo 
+        {
+            padding-top: 15px;
+        }
+
+        /* Define apenas o padding direito do elemento */
+        .padding-direita 
+        {
+            padding-right: 25px;
+        }
+        .botao-simples 
+        {
+            padding: 10px 20px; /* Topo e fundo: 10px, Direita e esquerda: 20px */
+            background-color: #007BFF; /* Cor de fundo azul */
+            color: white; /* Cor do texto */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor do mouse como ponteiro */
+            font-size: 16px; /* Tamanho do texto */
+            transition: background-color 0.3s; /* Transição suave ao mudar de cor */
+        }
+
+        .botao-simples:hover 
+        {
+            background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="padding-uniforme">Este é um exemplo de padding uniforme.</div>
+    <div class="padding-diferente">Este é um exemplo de paddings diferentes para cada lado.</div>
+    <div class="padding-topo">Este é um exemplo com apenas padding superior.</div>
+    <div class="padding-direita">Este é um exemplo com apenas padding direito.</div>
+    <h3>Exemplo de botão</h3>
+    <button class="botao-simples">Clique Aqui</button>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cor-de-fundo 
+        {
+            background-color: #ff4500; /* Laranja */
+        height: 200px;
+        }
+
+        .imagem-de-fundo 
+        {
+            background-image: url('https://placehold.co/300x400/EEE/31343C');
+        height: 200px;
+        }
+        .fundo-sem-repeticao 
+        {
+            background-image: url('https://placehold.co/800x400/EEE/31343C');
+            background-repeat: no-repeat;
+        height: 200px;
+        }
+
+        .fundo-repetido-x 
+        {
+            background-image: url('https://placehold.co/1600x400/EEE/31343C');
+            background-repeat: repeat-x; /* Repete horizontalmente */
+        height: 200px;
+        }
+
+        .fundo-repetido-y 
+        {
+            background-image: url('https://placehold.co/2600x400/EEE/31343C');
+            background-repeat: repeat-y; /* Repete verticalmente */
+        height: 200px;
+        }
+        .fundo-posicionado 
+        {
+            background-image: url('https://placehold.co/3600x400/EEE/31343C');
+            background-repeat: no-repeat;
+            background-position: top right;
+        height: 200px;
+        }
+        .fundo-tamanho-cobrir 
+        {
+            background-image: url('https://placehold.co/4600x400/EEE/31343C');
+            background-size: cover; /* A imagem cobre todo o elemento */
+        height: 500px;
+        }
+
+        .fundo-tamanho-contido 
+        {
+            background-image: url('https://placehold.co/600x400/EEE/31343C');
+            background-size: contain; /* A imagem é dimensionada para caber dentro do elemento */
+            height: 200px;
+        }
+        .fundo-completo 
+        {
+            background: #ff4500 url('https://placehold.co/600x400/EEE/31343C') no-repeat top right / cover;
+        height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cor-de-fundo">Fundo Laranja</div>
+    <div class="imagem-de-fundo">Imagem de Fundo</div>
+    <div class="fundo-sem-repeticao">Fundo Sem Repetição</div>
+    <div class="fundo-repetido-x">Fundo Repetido Horizontalmente</div>
+    <div class="fundo-repetido-y">Fundo Repetido Verticalmente</div>
+    <div class="fundo-posicionado">Fundo Posicionado</div>
+    <div class="fundo-tamanho-cobrir">Fundo Cobrindo</div>
+    <div class="fundo-tamanho-contido">Fundo Contido</div>
+    <div class="fundo-completo">Fundo Completo</div>
+</body>
+</html>

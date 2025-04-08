@@ -1,0 +1,55 @@
+<!-- 
+Passo 1: Escolher a Fonte no Google Fonts
+Primeiro, vá até o site do Google Fonts (fonts.google.com) e escolha a fonte que
+deseja usar. Por exemplo, vamos escolher a fonte "Roboto".
+
+Passo 2: Incorporar a Fonte no seu Site
+Depois de escolher a fonte, você verá uma opção para "Selecionar este estilo". Ao
+clicar nela, o Google Fonts fornecerá um link e um exemplo de código CSS para
+incorporar a fonte ao seu site.
+Exemplo de Incorporação via HTML
+O Google Fonts fornecerá um link <link> que você pode copiar e colar na seção
+<head> do seu arquivo HTML:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+rel="stylesheet">
+Este link importa fonte "Permanent Marker".
+Apenas com peso de 400 e com uma classe para manipular via css
+"imagem na pasta"
+Exemplo de Incorporação via CSS
+Alternativamente, você pode usar a regra @import no início do seu arquivo CSS:
+@import
+url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+Passo 3: Usar a Fonte no seu CSS
+Depois de incorporar a fonte ao seu site, você pode usá-la especificando a
+propriedade font-family no seu CSS. Por exemplo:
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  
+        .permanent-marker-regular 
+        {
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .negrito 
+        {
+            font-weight: 700; /* Usa o peso negrito da fonte Roboto */
+        }
+    </style>
+</head>
+<body>
+    <p class="permanent-marker-regular">Este é um texto padrão usando a fonte Permanent Marker.</p>
+    <p class="negrito permanent-marker-regular">Este é um texto em negrito usando a fonte Permanent Marker.</p>
+</body>
+</html>

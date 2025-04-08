@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define a largura e a altura fixas para um elemento */
+        .elemento-fixo 
+        {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        /* Usa porcentagens para definir a largura e a altura, tornando o elemento responsivo */
+        .elemento-responsivo 
+        {
+            width: 50%;
+            height: 50px; /* Altura fixa */
+            background-color: lightgreen;
+        }
+
+        /* Elemento com largura máxima e altura automática */
+        .elemento-max-width
+        {
+            max-width: 100px;
+            height: auto;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        /* Elemento com largura e altura mínimas */
+        .elemento-min-dimensions
+        {
+            min-width: 150px;
+            min-height: 50px;
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento-fixo">Elemento com dimensões fixas</div>
+    <div class="elemento-responsivo">Elemento com largura responsiva e altura fixa</div>
+    <div class="elemento-max-width">Elemento com largura máxima e altura automática</div>
+    <div class="elemento-min-dimensions">Elemento com largura e altura mínimas</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estiliza links não visitados */
+        a:link 
+        {
+            color: blue;
+            text-decoration: none; /* Remove o sublinhado padrão */
+        }
+
+        /* Estiliza links visitados */
+        a:visited 
+        {
+            color: purple;
+        }
+
+        /* Adiciona um sublinhado ao passar o mouse para melhorar a navegabilidade */
+        a:hover 
+        {
+            text-decoration: underline;
+            color: red; /* Muda a cor ao passar o mouse */
+        }
+
+        /* Estiliza links quando estão sendo clicados */
+        a:active 
+        {
+            color: green;
+        }
+
+        /* Estiliza links quando estão focados */
+        a:focus 
+        {
+            outline: 2px dashed orange;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="#" tabindex="1">Este é um link de exemplo</a></p>
+</body>
+</html>
