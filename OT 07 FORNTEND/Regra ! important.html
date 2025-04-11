@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text 
+        {
+         color: blue;
+        }
+
+        #important-text 
+        {
+            color: green; /* Este estilo seria normalmente aplicado devido à especificidade do ID ser maior que a da classe. */
+        }
+
+        .text  
+        {
+            color: red !important; /* !important força este estilo a ter prioridade, mesmo não sendo o mais específico. */
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

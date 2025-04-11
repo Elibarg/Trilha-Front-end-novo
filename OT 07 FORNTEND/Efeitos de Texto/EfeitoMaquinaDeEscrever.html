@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .typewriter 
+        {
+            font-size: 24px;
+            overflow: hidden; /* Garante que o conteúdo extra seja ocultado */
+            border-right: .15em solid orange; /* Simula o cursor da máquina de escrever */
+            white-space: nowrap; /* Impede a quebra de linha */
+            margin: 0 auto; /* Centraliza o texto */
+            animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        /* Animação que simula a digitação */
+        @keyframes typing 
+        {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Animação que simula o piscar do cursor */
+        @keyframes blink-caret 
+        {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+    </style>
+</head>
+<body>
+    <div class="typewriter">Máquina de Escrever</div>
+</body>
+</html>

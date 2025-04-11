@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container 
+        {
+            width: 200px;
+            height: 100px;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .visible 
+        {
+            overflow: visible;
+        }
+
+        .hidden 
+        {
+            overflow: hidden;
+        }
+
+        .scroll 
+        {
+            overflow: scroll;
+        }
+
+        .auto 
+        {
+            overflow: auto;
+        }
+
+        p 
+        {
+            width: 400px; /* Mais largo que o contêiner */
+        }
+    </style>
+</head>
+<body>
+    <div class="container visible">
+    <p>Visible: O conteúdo excedente é mostrado fora do elemento.</p>
+    </div>
+
+    <div class="container hidden">
+        <p>Hidden: O conteúdo excedente é recortado.</p>
+    </div>
+
+    <div class="container scroll">
+        <p>Scroll: Barras de rolagem são sempre mostradas.</p>
+    </div>
+
+    <div class="container auto">
+        <p>Auto: Barras de rolagem são mostradas se necessário.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container
+        {
+            width: 200px;
+            margin: 20px;
+            float: left;
+        }
+
+        .box 
+        {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .opaque 
+        {
+            background-color: #007BFF;
+        }
+
+        .semi-transparent 
+        {
+            background-color: #007BFF;
+            opacity: 0.5;
+        }
+
+        .transparent 
+        {
+            background-color: #007BFF;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container opaque">
+    <div class="box">
+        Opaco (1.0)
+    </div>
+    </div>
+
+    <div class="container semi-transparent">
+        <div class="box">
+            Semi-Transparente (0.5)
+        </div>
+    </div>
+
+    <div class="container transparent">
+        <div class="box">
+            Transparente (0.1)
+        </div>
+    </div>
+</body>
+</html>

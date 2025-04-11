@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* Estilização básica para visualização clara dos exemplos */
+            .block {
+            display: block;
+            background-color: #f9c2ff;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: #bef8fd;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: #ffd6a5;
+            margin: 5px;
+            padding: 10px;
+            width: 100px; /* Exemplo de definição de largura */
+        }
+
+        .none {
+            display: none;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: #fdffb6;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: #bde0fe;
+            margin: 5px;
+            padding: 10px;
+            flex-grow: 1; /* Faz os itens flexíveis crescerem igualmente */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto; /* Três colunas de tamanho automático */
+            background-color: #caffbf;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #9bf6ff;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Block - Ocupa a linha inteira.</div>
+    <span class="inline">Inline - </span>
+    <span class="inline">Não quebra a linha.</span>
+    <span class="inline-block">Inline-Block</span>
+    <span class="inline-block">com largura e altura.</span>
+    <div class="none">Este texto não será exibido.</div>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo de tipo */
+        div 
+        {
+            background-color: lightblue;
+            color: black;
+        }
+
+        /* Estilo de classe */
+        .box 
+        {
+            background-color: lightgreen;
+        }
+
+        /* Estilo de ID */
+        #uniqueBox 
+        {
+            background-color: tomato;
+        }
+
+        /* Estilo inline seria algo como style="background-color: violet;" dentro da tag HTML do elemento */
+    </style>
+</head>
+<body>
+    <div class="box" id="uniqueBox">Box</div>
+     <!--  
+    O seletor de tipo (div) tem a especificidade mais baixa (0,0,0,1).
+    O seletor de classe (.box) tem uma especificidade média (0,0,1,0).
+    O seletor de ID (#uniqueBox) tem a especificidade mais alta entre os seletores
+    de CSS declarados externamente (0,1,0,0).
+    Se você aplicasse um estilo inline ao elemento (como style="background-color:
+    violet;"), esse estilo teria a maior especificidade de todos (1,0,0,0) e sobrescreveria
+    os demais.
+     -->
+</body>
+</html>

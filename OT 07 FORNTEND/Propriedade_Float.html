@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-left 
+        {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .float-right 
+        {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .no-float 
+        {
+            float: none;
+            /* Exibição no fluxo normal */
+        }
+
+        .clear 
+        {
+            clear: both;
+            /* Evita que este elemento flua ao lado de elementos flutuantes anteriores */
+        }
+
+        .box 
+        {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px; /* Centraliza o texto verticalmente */
+        }
+
+        p 
+        {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box float-left">Esquerda</div>
+    <div class="box float-right">Direita</div>
+    <p>Este é um exemplo de texto que flui ao redor dos elementos flutuantes. O texto se ajusta ao redor das caixas "Esquerda" e "Direita", demonstrando como a propriedade `float` pode ser utilizada para controlar o layout de elementos na página.</p>
+    <div class="box no-float">Sem Float</div>
+    <div class="box clear">Clear</div>
+    <p>Este parágrafo aparece após aplicar `clear: both;`, garantindo que não flua ao lado dos elementos flutuantes anteriores.</p>
+
+</body>
+</html>
