@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, nav, main, aside, footer {
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilo para telas pequenas: layout linear */
+        @media (max-width: 599px) {
+            nav, aside {
+                display: none; /* Esconde a barra lateral e o menu em telas pequenas */
+            }
+        }
+
+        /* Estilo para telas médias: menu e conteúdo lado a lado */
+        @media (min-width: 600px) {
+            nav, main, aside {
+                display: inline-block;
+                vertical-align: top;
+            }
+            nav, aside {
+                width: 20%;
+            }
+            main {
+                width: 58%;
+            }
+        }
+
+        /* Estilo para telas grandes: ajustes adicionais */
+        @media (min-width: 1000px) {
+            header, footer {
+                text-align: center;
+            }
+            nav, aside {
+                width: 25%;
+            }
+            main {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Meu Site Responsivo</header>
+    <nav>Menu</nav>
+    <main>Conteúdo Principal</main>
+    <aside>Barra Lateral</aside>
+    <footer>Rodapé</footer>
+</body>
+</html>

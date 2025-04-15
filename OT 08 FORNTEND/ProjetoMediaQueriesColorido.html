@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Este exemplo demonstra como as media queries podem ser utilizadas para adaptar
+    um layout a diferentes tamanhos de tela -->
+    <style>
+        body, html 
+        {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content 
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Cores padrão para telas muito pequenas */
+        body 
+        {
+            background-color: #555; /* Cinza escuro */
+        }
+
+        /* Telas maiores que 600px */
+        @media (min-width: 600px) 
+        {
+            body 
+            {
+                background-color: #ff6347; /* Tomate */
+            }
+        }
+
+        /* Telas maiores que 768px */
+        @media (min-width: 768px) 
+        {
+            body 
+            {
+                background-color: #4682b4; /* Aço azul */
+            }
+        }
+
+        /* Telas maiores que 992px */
+        @media (min-width: 992px) 
+        {
+            body 
+            {
+                background-color: #32cd32; /* Verde lima */
+            }
+        }
+
+        /* Telas maiores que 1200px */
+        @media (min-width: 1200px) 
+        {
+            body 
+            {
+                background-color: #6a5acd; /* Azul ardósia */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">Resize a janela do navegador para mudar a cor de fundo.</div>
+</body>
+</html>
