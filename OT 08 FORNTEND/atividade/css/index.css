@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    background-color: #f4f4f4;
+}
+p
+{
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+/* Cabeçalho */
+header {
+    height: 170px;
+    background-color: #b30c0c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+header img {
+    height: 150px;
+    width: 150px;
+}
+header h1 {
+    font-size: 60px;
+    color: #fff;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Ícone de Login */
+.login {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 85px;
+    width: 85px;
+}
+
+/* Menu de Navegação */
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #962323;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
