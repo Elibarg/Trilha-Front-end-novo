@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta as colunas automaticamente */
+                gap: 20px;
+                padding: 20px;
+            }
+
+            header {
+                grid-column: 1 / 3;
+                background-color: #f0f0f0;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta as colunas automaticamente */
+                gap: 20px;
+            }
+
+            .card {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .card h2 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            .grafico-torta {
+                width: 100%;
+                height: 200px; /* Ajuste a altura do gráfico */
+                background-color: #eee;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 200px;
+                font-size: 24px;
+            }
+
+            .dados {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .dados p {
+                margin-bottom: 10px;
+            }
+
+            .produtos, .atividades {
+                list-style: none;
+                padding: 0;
+            }
+
+            .produtos li, .atividades li {
+                margin-bottom: 10px;
+            }
+
+            /* Layout responsivo para telas menores */
+            @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr; /* Uma única coluna para telas menores */
+            }
+
+            .card {
+                width: 100%; /* Cartões ocupam toda a largura */
+            }
+            }
+
+    </style>
+</head>
+<body>
+    
+<body>
+    <header>
+      <h1>Meu Dashboard</h1>
+    </header>
+    <section class="grid-container">
+      <div class="card">
+        <h2>Visão Geral</h2>
+        <div class="grafico-torta"></div>
+        <div class="dados">
+          <p>Usuários: 1.234</p>
+          <p>Conversões: 567</p>
+          <p>Receita: R$ 8.900,00</p>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Novos Produtos</h2>
+        <ul class="produtos">
+          <li>Produto 1</li>
+          <li>Produto 2</li>
+          <li>Produto 3</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Atividades Recentes</h2>
+        <ul class="atividades">
+          <li>Usuário X logou</li>
+          <li>Pedido Y realizado</li>
+          <li>Produto Z atualizado</li>
+        </ul>
+      </div>
+    </section>
+  
+  
+</body>
+</html>
