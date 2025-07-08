@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Minha Loja</h1>
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar produtos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <div class="filter-section">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#" class="active">Todos</a></li>
+                    <li><a href="#">Eletrônicos</a></li>
+                    <li><a href="#">Roupas</a></li>
+                    <li><a href="#">Casa</a></li>
+                    <li><a href="#">Esportes</a></li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h3>Preço</h3>
+                <div class="price-range">
+                    <input type="range" min="0" max="1000" value="500" class="slider" id="priceRange">
+                    <p>Até: R$ <span id="priceValue">500</span></p>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Ordenar por</h3>
+                <select>
+                    <option>Mais recentes</option>
+                    <option>Menor preço</option>
+                    <option>Maior preço</option>
+                    <option>Melhor avaliados</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-badge">Oferta</div>
+                <img src="https://source.unsplash.com/random/300x300?electronics" alt="Produto 1">
+                <h3>Smartphone XYZ</h3>
+                <div class="product-price">
+                    <span class="original-price">R$ 1.299,00</span>
+                    <span class="current-price">R$ 999,00</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(128)</span>
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://source.unsplash.com/random/300x300?shoes" alt="Produto 2">
+                <h3>Tênis Esportivo</h3>
+                <div class="product-price">
+                    <span class="current-price">R$ 249,90</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(64)</span>
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://source.unsplash.com/random/300x300?headphones" alt="Produto 3">
+                <h3>Fones de Ouvido</h3>
+                <div class="product-price">
+                    <span class="current-price">R$ 199,00</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(312)</span>
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">Novo</div>
+                <img src="https://source.unsplash.com/random/300x300?watch" alt="Produto 4">
+                <h3>Relógio Inteligente</h3>
+                <div class="product-price">
+                    <span class="current-price">R$ 799,00</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(47)</span>
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://source.unsplash.com/random/300x300?backpack" alt="Produto 5">
+                <h3>Mochila Resistente</h3>
+                <div class="product-price">
+                    <span class="current-price">R$ 129,90</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(89)</span>
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://source.unsplash.com/random/300x300?camera" alt="Produto 6">
+                <h3>Câmera Digital</h3>
+                <div class="product-price">
+                    <span class="original-price">R$ 1.599,00</span>
+                    <span class="current-price">R$ 1.299,00</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(156)</span>
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Loja virtual com os melhores produtos e preços competitivos.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>contato@minhaloja.com</p>
+                <p>(11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog com Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Blog</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+    
+    <div class="container main-content">
+        <main class="blog-posts">
+            <article class="post">
+                <img src="https://source.unsplash.com/random/800x400?technology" alt="Post 1">
+                <div class="post-content">
+                    <h2>Título do Post 1</h2>
+                    <p class="post-meta">Publicado em <time datetime="2023-05-15">15 de Maio, 2023</time> por <span>Autor</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula...</p>
+                    <a href="#" class="read-more">Leia mais</a>
+                </div>
+            </article>
+            
+            <article class="post">
+                <img src="https://source.unsplash.com/random/800x400?nature" alt="Post 2">
+                <div class="post-content">
+                    <h2>Título do Post 2</h2>
+                    <p class="post-meta">Publicado em <time datetime="2023-05-10">10 de Maio, 2023</time> por <span>Autor</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula...</p>
+                    <a href="#" class="read-more">Leia mais</a>
+                </div>
+            </article>
+            
+            <article class="post">
+                <img src="https://source.unsplash.com/random/800x400?travel" alt="Post 3">
+                <div class="post-content">
+                    <h2>Título do Post 3</h2>
+                    <p class="post-meta">Publicado em <time datetime="2023-05-05">5 de Maio, 2023</time> por <span>Autor</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula...</p>
+                    <a href="#" class="read-more">Leia mais</a>
+                </div>
+            </article>
+        </main>
+        
+        <aside class="sidebar">
+            <div class="sidebar-widget sticky">
+                <h3>Sobre o Blog</h3>
+                <p>Este é um blog sobre diversos tópicos interessantes. Aqui você encontrará artigos sobre tecnologia, viagens, natureza e muito mais.</p>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Categorias</h3>
+                <ul class="categories">
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Viagens</a></li>
+                    <li><a href="#">Natureza</a></li>
+                    <li><a href="#">Culinária</a></li>
+                    <li><a href="#">Esportes</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Posts Recentes</h3>
+                <ul class="recent-posts">
+                    <li><a href="#">Título do Post 1</a></li>
+                    <li><a href="#">Título do Post 2</a></li>
+                    <li><a href="#">Título do Post 3</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Blog. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

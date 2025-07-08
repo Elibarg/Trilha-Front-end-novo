@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Galeria de Fotos</h1>
+    </header>
+    
+    <div class="gallery-container">
+        <div class="gallery-item tall">
+            <img src="https://source.unsplash.com/random/300x500" alt="Imagem 1">
+            <div class="overlay">
+                <h3>Título da Foto 1</h3>
+            </div>
+        </div>
+        <div class="gallery-item wide">
+            <img src="https://source.unsplash.com/random/600x300" alt="Imagem 2">
+            <div class="overlay">
+                <h3>Título da Foto 2</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/400x400" alt="Imagem 3">
+            <div class="overlay">
+                <h3>Título da Foto 3</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/400x400" alt="Imagem 4">
+            <div class="overlay">
+                <h3>Título da Foto 4</h3>
+            </div>
+        </div>
+        <div class="gallery-item wide">
+            <img src="https://source.unsplash.com/random/600x300" alt="Imagem 5">
+            <div class="overlay">
+                <h3>Título da Foto 5</h3>
+            </div>
+        </div>
+        <div class="gallery-item tall">
+            <img src="https://source.unsplash.com/random/300x500" alt="Imagem 6">
+            <div class="overlay">
+                <h3>Título da Foto 6</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+
+</body>
+</html>

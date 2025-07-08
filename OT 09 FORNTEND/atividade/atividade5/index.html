@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Música</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="music-app">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>MusicApp</span>
+            </div>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-compact-disc"></i>
+                            <span>Sua Biblioteca</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="playlists">
+                <h3>SUAS PLAYLISTS</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-plus-circle"></i> Criar playlist</a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i> Músicas curtidas</a></li>
+                    <li><a href="#"><i class="fas fa-running"></i> Treino</a></li>
+                    <li><a href="#"><i class="fas fa-car"></i> Viagem</a></li>
+                    <li><a href="#"><i class="fas fa-moon"></i> Para dormir</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="topbar">
+                <div class="navigation-buttons">
+                    <button class="btn-nav"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn-nav"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="user-menu">
+                    <button class="btn-upgrade">Atualizar plano</button>
+                    <div class="user-profile">
+                        <img src="https://source.unsplash.com/random/40x40?person" alt="Usuário">
+                        <span>Usuário</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="banner">
+                <div class="banner-content">
+                    <h1>Boa tarde</h1>
+                    <div class="banner-buttons">
+                        <button class="btn-play"><i class="fas fa-play"></i> Reproduzir</button>
+                        <button class="btn-follow"><i class="fas fa-heart"></i> Seguir</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="section-header">
+                    <h2>Seus mixes mais ouvidos</h2>
+                    <a href="#" class="show-all">Mostrar tudo</a>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music1" alt="Mix 1">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Mix do Dia</h3>
+                        <p>Seu mix diário com músicas que você mais ouve</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music2" alt="Mix 2">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Anos 2000</h3>
+                        <p>As melhores músicas dos anos 2000</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music3" alt="Mix 3">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Rock Classics</h3>
+                        <p>Os maiores clássicos do rock</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music4" alt="Mix 4">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Pop Hits</h3>
+                        <p>Os maiores sucessos do pop</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music5" alt="Mix 5">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Foco no Trabalho</h3>
+                        <p>Músicas para manter o foco</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="section-header">
+                    <h2>Feito para você</h2>
+                    <a href="#" class="show-all">Mostrar tudo</a>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music6" alt="Playlist 1">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Daily Mix 1</h3>
+                        <p>Artist1, Artist2, Artist3 e mais</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music7" alt="Playlist 2">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Daily Mix 2</h3>
+                        <p>Artist4, Artist5, Artist6 e mais</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music8" alt="Playlist 3">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Discover Weekly</h3>
+                        <p>Sua playlist semanal com novas descobertas</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/200x200?music9" alt="Playlist 4">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                        </div>
+                        <h3>Release Radar</h3>
+                        <p>Novos lançamentos dos artistas que você segue</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="section-header">
+                    <h2>Seus artistas favoritos</h2>
+                    <a href="#" class="show-all">Mostrar tudo</a>
+                </div>
+                
+                <div class="artists-grid">
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://source.unsplash.com/random/150x150?artist1" alt="Artista 1">
+                        </div>
+                        <h3>Artista 1</h3>
+                        <p>Artista</p>
+                    </div>
+                    
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://source.unsplash.com/random/150x150?artist2" alt="Artista 2">
+                        </div>
+                        <h3>Artista 2</h3>
+                        <p>Artista</p>
+                    </div>
+                    
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://source.unsplash.com/random/150x150?artist3" alt="Artista 3">
+                        </div>
+                        <h3>Artista 3</h3>
+                        <p>Artista</p>
+                    </div>
+                    
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://source.unsplash.com/random/150x150?artist4" alt="Artista 4">
+                        </div>
+                        <h3>Artista 4</h3>
+                        <p>Artista</p>
+                    </div>
+                    
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://source.unsplash.com/random/150x150?artist5" alt="Artista 5">
+                        </div>
+                        <h3>Artista 5</h3>
+                        <p>Artista</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="player-bar">
+            <div class="now-playing">
+                <div class="track-info">
+                    <img src="https://source.unsplash.com/random/60x60?album1" alt="Música atual">
+                    <div class="track-details">
+                        <h4>Nome da Música</h4>
+                        <p>Artista</p>
+                    </div>
+                    <button class="btn-like"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <div class="controls">
+                    <button><i class="fas fa-random"></i></button>
+                    <button><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause"><i class="fas fa-pause"></i></button>
+                    <button><i class="fas fa-step-forward"></i></button>
+                    <button><i class="fas fa-redo"></i></button>
+                </div>
+                
+                <div class="progress-bar">
+                    <span class="time">0:00</span>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="time">3:45</span>
+                </div>
+            </div>
+            
+            <div class="extra-controls">
+                <button><i class="fas fa-list"></i></button>
+                <button><i class="fas fa-laptop"></i></button>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up"></i>
+                    <div class="volume-slider">
+                        <div class="volume-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
