@@ -1,80 +1,88 @@
+/* Reset básico para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura */
 }
 
+/* Estilo do corpo da página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: white;
-    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte principal */
+    background-color: #121212; /* Fundo escuro */
+    color: white; /* Texto branco */
+    height: 100vh; /* Altura total da viewport */
 }
 
+/* Container principal da aplicação de música */
 .music-app {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    height: 100vh;
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: auto 1fr; /* Sidebar e conteúdo principal */
+    grid-template-rows: 1fr auto; /* Conteúdo e player na parte inferior */
+    height: 100vh; /* Altura total da viewport */
 }
 
+/* Barra lateral */
 .sidebar {
-    background: #000;
-    padding: 20px;
+    background: #000; /* Fundo preto */
+    padding: 20px; /* Espaço interno */
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column; /* Itens em coluna */
+    gap: 30px; /* Espaçamento entre itens */
 }
 
+/* Logo no topo da sidebar */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    gap: 10px; /* Espaço entre ícone e texto */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
 }
 
 .logo i {
-    font-size: 2rem;
+    font-size: 2rem; /* Ícone maior */
 }
 
+/* Menu principal da sidebar */
 .main-menu ul {
-    list-style: none;
-    margin-top: 20px;
+    list-style: none; /* Remove marcadores */
+    margin-top: 20px; /* Espaço acima da lista */
 }
 
 .main-menu li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Espaço entre itens */
 }
 
 .main-menu a {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #b3b3b3;
-    font-weight: 600;
-    transition: all 0.3s;
+    gap: 15px; /* Espaço entre ícone e texto */
+    padding: 10px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    color: #b3b3b3; /* Cor cinza clara */
+    font-weight: 600; /* Peso da fonte */
+    transition: all 0.3s; /* Transição suave */
 }
 
+/* Hover e item ativo */
 .main-menu a:hover, .main-menu li.active a {
-    color: white;
-    background: #282828;
+    color: white; /* Cor branca */
+    background: #282828; /* Fundo escuro */
 }
 
 .main-menu i {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Tamanho dos ícones */
     width: 24px;
-    text-align: center;
+    text-align: center; /* Centraliza ícones */
 }
 
+/* Sessão de playlists */
 .playlists h3 {
     color: #b3b3b3;
     font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
     margin-bottom: 15px;
 }
 
@@ -105,24 +113,27 @@ body {
     font-size: 1.1rem;
 }
 
+/* Conteúdo principal */
 .main-content {
-    background: linear-gradient(#1e1e1e, #121212);
-    padding: 0 20px 20px;
-    overflow-y: auto;
+    background: linear-gradient(#1e1e1e, #121212); /* Degradê escuro */
+    padding: 0 20px 20px; /* Espaço interno */
+    overflow-y: auto; /* Scroll vertical se necessário */
 }
 
+/* Barra superior (topbar) */
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    position: sticky;
+    position: sticky; /* Fica fixo no topo ao rolar */
     top: 0;
-    background: rgba(18, 18, 18, 0.7);
-    backdrop-filter: blur(10px);
-    z-index: 10;
+    background: rgba(18, 18, 18, 0.7); /* Fundo translúcido */
+    backdrop-filter: blur(10px); /* Efeito de desfoque atrás */
+    z-index: 10; /* Sobreposição acima dos elementos */
 }
 
+/* Botões de navegação */
 .navigation-buttons {
     display: flex;
     gap: 10px;
@@ -131,7 +142,7 @@ body {
 .btn-nav {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+    border-radius: 50%; /* Botões circulares */
     background: rgba(0, 0, 0, 0.7);
     border: none;
     color: white;
@@ -141,12 +152,14 @@ body {
     align-items: center;
 }
 
+/* Menu do usuário */
 .user-menu {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* Botão de upgrade */
 .btn-upgrade {
     background: transparent;
     border: 1px solid #b3b3b3;
@@ -159,10 +172,11 @@ body {
 }
 
 .btn-upgrade:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Leve aumento */
     border-color: white;
 }
 
+/* Perfil do usuário */
 .user-profile {
     display: flex;
     align-items: center;
@@ -176,7 +190,7 @@ body {
 .user-profile img {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular */
     object-fit: cover;
 }
 
@@ -190,6 +204,7 @@ body {
     margin-left: 5px;
 }
 
+/* Banner principal */
 .banner {
     background: linear-gradient(#2e2e2e, #1e1e1e);
     border-radius: 10px;
@@ -202,20 +217,18 @@ body {
     overflow: hidden;
 }
 
+/* Imagem de fundo do banner */
 .banner::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: url('https://source.unsplash.com/random/800x300?music') center/cover;
-    opacity: 0.3;
+    opacity: 0.3; /* Transparência */
 }
 
 .banner-content {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Acima da imagem de fundo */
     width: 100%;
 }
 
@@ -224,13 +237,14 @@ body {
     margin-bottom: 20px;
 }
 
+/* Botões no banner */
 .banner-buttons {
     display: flex;
     gap: 15px;
 }
 
 .btn-play {
-    background: #1db954;
+    background: #1db954; /* Verde Spotify */
     color: white;
     border: none;
     padding: 12px 30px;
@@ -267,6 +281,7 @@ body {
     border-color: white;
 }
 
+/* Seções gerais */
 .section {
     margin-bottom: 40px;
 }
@@ -296,6 +311,7 @@ body {
     color: white;
 }
 
+/* Grades de cards (álbuns, playlists, artistas, etc) */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -322,11 +338,12 @@ body {
 .card-image img {
     width: 100%;
     border-radius: 4px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; /* Mantém proporção quadrada */
     object-fit: cover;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+/* Botão de play sobre a imagem do card */
 .play-button {
     position: absolute;
     bottom: 10px;
@@ -340,7 +357,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    opacity: 0; /* Invisível inicialmente */
     transform: translateY(10px);
     transition: all 0.3s;
     cursor: pointer;
@@ -348,7 +365,7 @@ body {
 }
 
 .card:hover .play-button {
-    opacity: 1;
+    opacity: 1; /* Aparece ao passar o mouse */
     transform: translateY(0);
 }
 
@@ -357,7 +374,7 @@ body {
     margin-bottom: 5px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /* Texto cortado com "..." */
 }
 
 .card p {
@@ -368,6 +385,7 @@ body {
     overflow: hidden;
 }
 
+/* Grade dos artistas */
 .artists-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -413,6 +431,7 @@ body {
     font-size: 0.8rem;
 }
 
+/* Barra do player inferior */
 .player-bar {
     background: #181818;
     border-top: 1px solid #282828;
@@ -423,6 +442,7 @@ body {
     gap: 20px;
 }
 
+/* Informação da música atual */
 .now-playing {
     display: flex;
     align-items: center;
@@ -460,6 +480,7 @@ body {
     font-size: 0.8rem;
 }
 
+/* Botão de curtir */
 .btn-like {
     background: transparent;
     border: none;
@@ -473,6 +494,7 @@ body {
     color: #1db954;
 }
 
+/* Controles do player */
 .player-controls {
     display: flex;
     flex-direction: column;
@@ -499,6 +521,7 @@ body {
     color: white;
 }
 
+/* Botão play/pause principal */
 .play-pause {
     background: white;
     color: black !important;
@@ -510,6 +533,7 @@ body {
     align-items: center;
 }
 
+/* Barra de progresso */
 .progress-bar {
     display: flex;
     align-items: center;
@@ -533,11 +557,12 @@ body {
 
 .progress {
     height: 100%;
-    width: 30%;
+    width: 30%; /* Exemplo de progresso atual */
     background: #b3b3b3;
     border-radius: 2px;
 }
 
+/* Controles extras (shuffle, repeat, etc) */
 .extra-controls {
     display: flex;
     align-items: center;
@@ -558,6 +583,7 @@ body {
     color: white;
 }
 
+/* Controle de volume */
 .volume-control {
     display: flex;
     align-items: center;
@@ -575,19 +601,20 @@ body {
 
 .volume-progress {
     height: 100%;
-    width: 70%;
+    width: 70%; /* Exemplo do volume atual */
     background: #b3b3b3;
     border-radius: 2px;
 }
 
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .music-app {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        grid-template-rows: auto 1fr auto; /* Ajusta linhas */
     }
     
     .sidebar {
-        display: none;
+        display: none; /* Esconde sidebar */
     }
     
     .cards-grid, .artists-grid {

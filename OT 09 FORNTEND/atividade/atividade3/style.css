@@ -1,196 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+    line-height: 1.6; /* Altura entre linhas para melhor leitura */
+    color: #333; /* Cor do texto */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0 20px; /* Espaço lateral interno */
 }
 
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 1rem 0;
+    background: #2c3e50; /* Cor de fundo escura */
+    color: white; /* Cor do texto branca */
+    padding: 1rem 0; /* Espaço interno vertical */
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex; /* Layout flexível horizontal */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite que quebre linha em telas pequenas */
 }
 
 .search-cart {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: flex; /* Layout em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 20px; /* Espaço entre o campo de busca e o carrinho */
 }
 
 .search-box {
-    display: flex;
+    display: flex; /* Exibe input e botão lado a lado */
 }
 
 .search-box input {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px 0 0 4px;
-    width: 250px;
+    padding: 8px 15px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 4px 0 0 4px; /* Arredonda a esquerda */
+    width: 250px; /* Largura do input */
 }
 
 .search-box button {
-    padding: 8px 15px;
-    background: #3498db;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
+    padding: 8px 15px; /* Espaçamento interno */
+    background: #3498db; /* Cor azul do botão */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 0 4px 4px 0; /* Arredonda a direita */
+    cursor: pointer; /* Cursor de mão */
 }
 
 .cart {
-    position: relative;
-    font-size: 1.5rem;
-    cursor: pointer;
+    position: relative; /* Necessário para posicionar o contador */
+    font-size: 1.5rem; /* Tamanho do ícone/texto do carrinho */
+    cursor: pointer; /* Cursor de mão */
 }
 
 .cart-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #e74c3c;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
+    position: absolute; /* Posiciona em relação ao carrinho */
+    top: -10px; /* Distância do topo */
+    right: -10px; /* Distância da direita */
+    background: #e74c3c; /* Cor vermelha */
+    color: white; /* Texto branco */
+    border-radius: 50%; /* Deixa redondo */
+    width: 20px; /* Largura do contador */
+    height: 20px; /* Altura do contador */
+    display: flex; /* Centraliza texto */
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Tamanho do número */
 }
 
 nav {
-    background: #34495e;
-    padding: 0.5rem 0;
+    background: #34495e; /* Cor de fundo do menu */
+    padding: 0.5rem 0; /* Espaçamento vertical */
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+    display: flex; /* Itens do menu em linha */
+    list-style: none; /* Remove bolinhas */
+    justify-content: center; /* Centraliza os itens */
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espaço entre os itens */
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Sem sublinhado */
+    padding: 0.5rem 1rem; /* Espaço interno */
+    transition: background-color 0.3s; /* Animação suave ao passar o mouse */
 }
 
 nav a:hover {
-    background-color: #2c3e50;
-    border-radius: 4px;
+    background-color: #2c3e50; /* Cor ao passar o mouse */
+    border-radius: 4px; /* Arredondamento leve */
 }
 
 main {
-    padding: 30px 0;
-    display: flex;
-    gap: 30px;
+    padding: 30px 0; /* Espaço acima e abaixo */
+    display: flex; /* Layout de duas colunas */
+    gap: 30px; /* Espaço entre filtros e produtos */
 }
 
 .filters {
-    flex: 0 0 250px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: fit-content;
+    flex: 0 0 250px; /* Largura fixa */
+    background: white; /* Fundo branco */
+    padding: 20px; /* Espaço interno */
+    border-radius: 8px; /* Arredondamento */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    height: fit-content; /* Altura automática com base no conteúdo */
 }
 
 .filter-section {
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Espaço abaixo da seção */
 }
 
 .filter-section h3 {
-    margin-bottom: 15px;
-    color: #2c3e50;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    color: #2c3e50; /* Cor do título */
+    border-bottom: 1px solid #eee; /* Linha decorativa */
+    padding-bottom: 5px; /* Espaço entre título e linha */
 }
 
 .filter-section ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores */
 }
 
 .filter-section li {
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Espaço entre os filtros */
 }
 
 .filter-section a {
-    color: #3498db;
-    text-decoration: none;
+    color: #3498db; /* Cor azul dos links */
+    text-decoration: none; /* Sem sublinhado */
 }
 
 .filter-section a.active {
-    font-weight: bold;
-    color: #2c3e50;
+    font-weight: bold; /* Destaque para filtro ativo */
+    color: #2c3e50; /* Cor mais escura */
 }
 
 .price-range {
-    margin-top: 15px;
+    margin-top: 15px; /* Espaço acima do controle */
 }
 
 .slider {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 100%; /* Largura total */
+    margin-bottom: 10px; /* Espaço abaixo */
 }
 
 select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    width: 100%; /* Ocupa a largura total */
+    padding: 8px; /* Espaço interno */
+    border: 1px solid #ddd; /* Borda cinza */
+    border-radius: 4px; /* Arredondamento */
 }
 
 .products-grid {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    flex: 1; /* Ocupa o restante do espaço */
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsivo */
+    gap: 20px; /* Espaço entre produtos */
 }
 
 .product-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: white; /* Fundo do card */
+    border-radius: 8px; /* Canto arredondado */
+    overflow: hidden; /* Esconde conteúdo que ultrapasse */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 15px; /* Espaço interno */
+    position: relative; /* Para posicionar o selo (badge) */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animações suaves */
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Levanta ao passar o mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
 }
 
 .product-badge {
-    position: absolute;
+    position: absolute; /* Posiciona no topo do card */
     top: 10px;
     right: 10px;
-    background: #e74c3c;
-    color: white;
+    background: #e74c3c; /* Vermelho */
+    color: white; /* Texto branco */
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -198,37 +198,37 @@ select {
 }
 
 .product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 15px;
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Cobre sem distorcer */
+    border-radius: 4px; /* Canto arredondado */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
 }
 
 .product-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-size: 1.1rem; /* Tamanho da fonte */
 }
 
 .product-price {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Espaço abaixo do preço */
 }
 
 .original-price {
-    text-decoration: line-through;
-    color: #7f8c8d;
-    margin-right: 10px;
+    text-decoration: line-through; /* Riscado (preço antigo) */
+    color: #7f8c8d; /* Cinza claro */
+    margin-right: 10px; /* Espaço ao lado */
     font-size: 0.9rem;
 }
 
 .current-price {
-    font-weight: bold;
+    font-weight: bold; /* Destaca o preço atual */
     color: #2c3e50;
     font-size: 1.1rem;
 }
 
 .product-rating {
-    color: #f39c12;
+    color: #f39c12; /* Amarelo (estrelas) */
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -241,9 +241,9 @@ select {
 }
 
 .add-to-cart {
-    width: 100%;
+    width: 100%; /* Botão ocupa toda a largura */
     padding: 10px;
-    background: #3498db;
+    background: #3498db; /* Azul */
     color: white;
     border: none;
     border-radius: 4px;
@@ -252,69 +252,69 @@ select {
 }
 
 .add-to-cart:hover {
-    background: #2980b9;
+    background: #2980b9; /* Azul mais escuro */
 }
 
 footer {
-    background: #2c3e50;
+    background: #2c3e50; /* Fundo escuro */
     color: white;
-    padding: 40px 0 0;
+    padding: 40px 0 0; /* Espaço interno, sem padding inferior */
 }
 
 footer .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Espaço abaixo do conteúdo */
 }
 
 .footer-section h4 {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaço abaixo do título */
     font-size: 1.2rem;
 }
 
 .footer-section ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores */
 }
 
 .footer-section li {
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Espaço entre os itens */
 }
 
 .footer-section a {
-    color: #bdc3c7;
+    color: #bdc3c7; /* Cinza claro */
     text-decoration: none;
 }
 
 .footer-section a:hover {
-    color: white;
+    color: white; /* Destaca ao passar o mouse */
 }
 
 .copyright {
-    text-align: center;
-    padding: 15px 0;
-    background: #1a252f;
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaço vertical */
+    background: #1a252f; /* Fundo mais escuro */
     font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
     main {
-        flex-direction: column;
+        flex-direction: column; /* Empilha filtros e produtos */
     }
     
     .filters {
-        flex: 1;
+        flex: 1; /* Ocupa toda a largura */
     }
     
     nav ul {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Quebra itens em linha para baixo se necessário */
     }
     
     nav li {
-        margin: 5px;
+        margin: 5px; /* Reduz espaço entre itens */
     }
     
     .search-box input {
-        width: 180px;
+        width: 180px; /* Diminui o tamanho do input de busca */
     }
 }

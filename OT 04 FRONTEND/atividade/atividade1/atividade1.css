@@ -1,97 +1,97 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial (ou sans-serif se Arial não estiver disponível) */
+    margin: 0; /* Remove as margens externas do corpo da página */
+    padding: 0; /* Remove o preenchimento interno do corpo da página */
 }
 
 /* Cabeçalho */
 .header {
-    text-align: center;
-    padding: 30px;
-    background-color: white;
+    text-align: center; /* Centraliza o conteúdo do cabeçalho horizontalmente */
+    padding: 30px; /* Adiciona 30px de preenchimento interno em todos os lados */
+    background-color: white; /* Define a cor de fundo do cabeçalho como branco */
 }
 
 /* Barra de navegação */
 .topnav {
-    overflow: hidden;
-    background-color: #0f0f0f;
+    overflow: hidden; /* Impede que os elementos flutuantes saiam da barra de navegação */
+    background-color: #0f0f0f; /* Define a cor de fundo da barra como preto quase puro */
 }
 
 .topnav a {
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
-    color: #ffffff;
+    float: left; /* Faz com que os links fiquem alinhados à esquerda */
+    text-align: center; /* Centraliza o texto dentro de cada link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 14px 16px; /* Adiciona espaço interno nos links (14px vertical e 16px horizontal) */
+    color: #ffffff; /* Define a cor do texto como branco */
 }
 
 .topnav a.carrinho {
-    float: right;
+    float: right; /* Faz com que o link com a classe "carrinho" fique alinhado à direita */
 }
 
 .topnav a.carrinho img {
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
+    width: 22px; /* Define a largura do ícone do carrinho */
+    height: 22px; /* Define a altura do ícone do carrinho */
+    vertical-align: middle; /* Alinha verticalmente a imagem ao meio em relação ao texto */
 }
 
 /* Container principal */
 .container {
-    overflow: auto;
-    padding: 20px;
+    overflow: auto; /* Garante que os elementos flutuantes dentro do container sejam contidos corretamente */
+    padding: 20px; /* Adiciona 20px de espaço interno ao redor do conteúdo */
 }
 
 /* Cartões de produtos */
 .sellcard {
-    float: left;
-    width: 23.4%;
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    float: left; /* Faz com que os cartões fiquem lado a lado, alinhados à esquerda */
+    width: 23.4%; /* Define a largura de cada cartão como 23.4% da área disponível */
+    margin: 10px; /* Adiciona 10px de margem externa ao redor dos cartões */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adiciona uma sombra leve ao redor dos cartões */
+    transition: 0.3s; /* Suaviza a transição de efeitos em 0.3 segundos */
 }
 
 .sellcard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Aumenta a sombra ao passar o mouse sobre o cartão */
 }
 
 .sellcard img {
-    width: 80%;
-    margin: auto;
-    display: block;
-    padding-top: 15px;
+    width: 80%; /* Define a largura da imagem como 80% do cartão */
+    margin: auto; /* Centraliza horizontalmente a imagem */
+    display: block; /* Faz a imagem se comportar como bloco para permitir centralização */
+    padding-top: 15px; /* Adiciona um espaço de 15px acima da imagem */
 }
 
 .descricao {
-    text-align: center;
-    font-size: 15px;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: 400;
-    padding: 0 10px;
+    text-align: center; /* Centraliza o texto da descrição */
+    font-size: 15px; /* Define o tamanho da fonte como 15px */
+    font-family: Helvetica; /* Define a fonte como Helvetica */
+    font-style: normal; /* Garante que o estilo da fonte seja normal (sem itálico, por exemplo) */
+    font-weight: 400; /* Define o peso da fonte como regular (400) */
+    padding: 0 10px; /* Adiciona 10px de espaço horizontal interno (nos lados) */
 }
 
 .valor {
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: #e53935;
+    text-align: center; /* Centraliza o valor */
+    font-size: 0.8em; /* Define o tamanho da fonte como 80% do tamanho do elemento pai */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #e53935; /* Define a cor do texto como um vermelho forte */
 }
 
 .compra {
-    text-align: center;
-    padding: 10px;
+    text-align: center; /* Centraliza o conteúdo da seção de compra */
+    padding: 10px; /* Adiciona 10px de preenchimento interno em todos os lados */
 }
 
 .compra button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+    background-color: #4CAF50; /* Define a cor de fundo do botão como verde */
+    color: white; /* Define a cor do texto como branca */
+    padding: 8px 16px; /* Define o preenchimento interno do botão (vertical e horizontal) */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Altera o cursor para o ícone de "mão" ao passar sobre o botão */
+    border-radius: 4px; /* Arredonda levemente os cantos do botão */
 }
 
 .compra button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Altera a cor de fundo do botão quando o mouse passa sobre ele */
 }

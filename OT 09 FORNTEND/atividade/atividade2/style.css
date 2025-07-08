@@ -1,219 +1,219 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão como Arial */
+    line-height: 1.6; /* Espaçamento entre linhas para melhorar a legibilidade */
+    color: #333; /* Cor do texto como cinza escuro */
+    background-color: #f9f9f9; /* Cor de fundo clara */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente o container */
+    padding: 0 20px; /* Espaçamento interno lateral */
 }
 
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: #2c3e50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 1rem 0; /* Espaçamento vertical */
+    position: sticky; /* Fixa o cabeçalho no topo ao rolar a página */
+    top: 0; /* Define o topo da fixação */
+    z-index: 100; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Exibe os itens em linha (horizontal) */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente ao centro */
 }
 
 .main-nav ul {
-    display: flex;
-    list-style: none;
+    display: flex; /* Exibe os itens do menu em linha */
+    list-style: none; /* Remove as bolinhas da lista */
 }
 
 .main-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 0.5rem 1rem; /* Espaçamento interno dos links */
+    transition: background-color 0.3s; /* Suaviza a mudança de cor ao passar o mouse */
 }
 
 .main-nav a:hover {
-    background-color: #34495e;
+    background-color: #34495e; /* Cor de fundo quando o mouse passa sobre o link */
 }
 
 .menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
+    background: none; /* Remove fundo do botão */
+    border: none; /* Remove borda */
+    color: white; /* Cor do ícone ou texto */
+    font-size: 1.5rem; /* Tamanho do texto/ícone */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    display: none; /* Oculta o botão por padrão */
 }
 
 .main-content {
-    display: flex;
-    gap: 30px;
-    padding: 30px 0;
+    display: flex; /* Layout com colunas lado a lado */
+    gap: 30px; /* Espaço entre blog e sidebar */
+    padding: 30px 0; /* Espaço acima e abaixo do conteúdo */
 }
 
 .blog-posts {
-    flex: 2;
+    flex: 2; /* Ocupa 2 partes do espaço total (2/3) */
 }
 
 .sidebar {
-    flex: 1;
+    flex: 1; /* Ocupa 1 parte do espaço total (1/3) */
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Itens da sidebar empilhados verticalmente */
+    gap: 20px; /* Espaço entre os widgets da sidebar */
 }
 
 .post {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    background: white; /* Fundo branco para cada post */
+    border-radius: 8px; /* Canto arredondado */
+    overflow: hidden; /* Esconde conteúdo que passar dos limites */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 30px; /* Espaço entre posts */
 }
 
 .post img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    width: 100%; /* Imagem ocupa toda a largura do post */
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Imagem cobre o espaço sem distorção */
 }
 
 .post-content {
-    padding: 20px;
+    padding: 20px; /* Espaço interno do conteúdo do post */
 }
 
 .post h2 {
-    margin-bottom: 10px;
-    color: #2c3e50;
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #2c3e50; /* Cor do título */
 }
 
 .post-meta {
-    color: #7f8c8d;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    color: #7f8c8d; /* Cor cinza claro para metadados */
+    font-size: 0.9rem; /* Tamanho pequeno para data, autor etc. */
+    margin-bottom: 15px; /* Espaço abaixo dos metadados */
 }
 
 .read-more {
-    display: inline-block;
-    margin-top: 15px;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
+    display: inline-block; /* Permite aplicar margem/padding como um botão */
+    margin-top: 15px; /* Espaço acima do botão "Leia mais" */
+    color: #3498db; /* Cor azul */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
 }
 
 .read-more:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
 .sidebar-widget {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white; /* Fundo branco */
+    padding: 20px; /* Espaço interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .sidebar-widget.sticky {
-    position: sticky;
-    top: 80px;
+    position: sticky; /* Fixa o widget na tela ao rolar */
+    top: 80px; /* Distância do topo ao fixar */
 }
 
 .sidebar-widget h3 {
-    margin-bottom: 15px;
-    color: #2c3e50;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    color: #2c3e50; /* Cor do título */
+    border-bottom: 2px solid #eee; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço entre título e linha */
 }
 
 .categories li, .recent-posts li {
-    margin-bottom: 10px;
-    list-style: none;
+    margin-bottom: 10px; /* Espaço entre itens das listas */
+    list-style: none; /* Remove bolinhas */
 }
 
 .categories a, .recent-posts a {
-    color: #3498db;
-    text-decoration: none;
+    color: #3498db; /* Cor azul para links */
+    text-decoration: none; /* Sem sublinhado */
 }
 
 .categories a:hover, .recent-posts a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
 .newsletter-form {
-    display: flex;
+    display: flex; /* Exibe os campos em coluna */
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; /* Espaço entre os campos do formulário */
 }
 
 .newsletter-form input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos levemente arredondados */
 }
 
 .newsletter-form button {
-    padding: 10px;
-    background: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 10px; /* Espaço interno */
+    background: #3498db; /* Fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave ao mudar a cor */
 }
 
 .newsletter-form button:hover {
-    background: #2980b9;
+    background: #2980b9; /* Azul mais escuro ao passar o mouse */
 }
 
 footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+    background: #2c3e50; /* Cor de fundo escura */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento vertical */
+    margin-top: 30px; /* Espaço acima do rodapé */
 }
 
 @media (max-width: 768px) {
     .main-content {
-        flex-direction: column;
+        flex-direction: column; /* Empilha blog e sidebar em telas menores */
     }
     
     .main-nav {
-        display: none;
+        display: none; /* Oculta o menu inicialmente no mobile */
         position: absolute;
-        top: 100%;
+        top: 100%; /* Posiciona abaixo do cabeçalho */
         left: 0;
         right: 0;
-        background: #2c3e50;
+        background: #2c3e50; /* Fundo do menu mobile */
     }
     
     .main-nav.active {
-        display: block;
+        display: block; /* Mostra o menu ao ativar (via JavaScript) */
     }
     
     .main-nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Links em coluna no menu mobile */
     }
     
     .main-nav a {
-        display: block;
-        padding: 1rem;
+        display: block; /* Ocupa toda a largura do menu */
+        padding: 1rem; /* Espaço interno para toque confortável */
     }
     
     .menu-toggle {
-        display: block;
+        display: block; /* Exibe o botão de menu no mobile */
     }
     
     .sidebar-widget.sticky {
-        position: static;
+        position: static; /* Remove o comportamento "fixo" da sidebar no mobile */
     }
 }

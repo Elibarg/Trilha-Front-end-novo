@@ -1,95 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura do elemento */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte da interface */
+    background-color: #f5f7fa; /* Cor de fundo clara */
+    color: #333; /* Cor do texto principal */
 }
 
 .dashboard {
-    display: flex;
-    min-height: 100vh;
+    display: flex; /* Layout em linha: sidebar + conteúdo */
+    min-height: 100vh; /* Altura mínima da tela inteira */
 }
 
 .sidebar {
-    width: 250px;
-    background: #2c3e50;
-    color: white;
+    width: 250px; /* Largura fixa da barra lateral */
+    background: #2c3e50; /* Cor de fundo escura */
+    color: white; /* Texto branco */
     display: flex;
-    flex-direction: column;
-    transition: width 0.3s;
+    flex-direction: column; /* Elementos da sidebar em coluna */
+    transition: width 0.3s; /* Transição suave ao mudar a largura */
 }
 
 .logo {
-    padding: 20px;
+    padding: 20px; /* Espaço interno */
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
+    align-items: center; /* Centraliza ícone e texto verticalmente */
+    gap: 10px; /* Espaço entre ícone e texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
     font-weight: bold;
-    border-bottom: 1px solid #34495e;
+    border-bottom: 1px solid #34495e; /* Linha de separação inferior */
 }
 
 .logo i {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Ícone maior */
 }
 
 .menu {
-    flex: 1;
-    padding: 20px 0;
+    flex: 1; /* Ocupa todo o espaço vertical disponível */
+    padding: 20px 0; /* Espaço acima e abaixo */
 }
 
 .menu ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores */
 }
 
 .menu li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Espaço entre itens */
 }
 
 .menu a {
     display: flex;
     align-items: center;
-    padding: 12px 20px;
-    color: #bdc3c7;
+    padding: 12px 20px; /* Espaço interno dos links */
+    color: #bdc3c7; /* Cinza claro */
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.3s; /* Transição suave para todas as mudanças */
 }
 
 .menu a:hover {
-    background: #34495e;
+    background: #34495e; /* Fundo mais escuro ao passar o mouse */
     color: white;
 }
 
 .menu a i {
     margin-right: 10px;
     width: 20px;
-    text-align: center;
+    text-align: center; /* Centraliza ícone */
 }
 
 .menu li.active a {
-    background: #34495e;
+    background: #34495e; /* Fundo fixo para item ativo */
     color: white;
-    border-left: 3px solid #3498db;
+    border-left: 3px solid #3498db; /* Linha azul à esquerda */
 }
 
 .user-profile {
     display: flex;
     align-items: center;
     padding: 15px;
-    border-top: 1px solid #34495e;
-    gap: 10px;
+    border-top: 1px solid #34495e; /* Linha superior */
+    gap: 10px; /* Espaço entre imagem e info */
 }
 
 .user-profile img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    border-radius: 50%; /* Deixa circular */
+    object-fit: cover; /* Imagem preenche sem distorcer */
 }
 
 .user-info {
@@ -108,13 +108,13 @@ body {
 }
 
 .user-profile i {
-    cursor: pointer;
+    cursor: pointer; /* Ícone clicável */
 }
 
 .content {
-    flex: 1;
+    flex: 1; /* Ocupa o restante da tela */
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: auto; /* Rola se o conteúdo for muito grande */
 }
 
 .topbar {
@@ -225,21 +225,10 @@ body {
     color: white;
 }
 
-.bg-blue {
-    background: #3498db;
-}
-
-.bg-green {
-    background: #2ecc71;
-}
-
-.bg-orange {
-    background: #e67e22;
-}
-
-.bg-purple {
-    background: #9b59b6;
-}
+.bg-blue { background: #3498db; }
+.bg-green { background: #2ecc71; }
+.bg-orange { background: #e67e22; }
+.bg-purple { background: #9b59b6; }
 
 .card-info h3 {
     font-size: 1.5rem;
@@ -257,13 +246,8 @@ body {
     font-weight: bold;
 }
 
-.positive {
-    color: #2ecc71;
-}
-
-.negative {
-    color: #e74c3c;
-}
+.positive { color: #2ecc71; }
+.negative { color: #e74c3c; }
 
 .charts-row {
     display: grid;
@@ -418,11 +402,11 @@ th {
 
 @media (max-width: 768px) {
     .sidebar {
-        width: 70px;
+        width: 70px; /* Reduz a largura da sidebar */
     }
     
     .logo span, .menu a span, .user-info {
-        display: none;
+        display: none; /* Oculta textos e informações para espaço */
     }
     
     .menu a {
@@ -445,6 +429,6 @@ th {
     }
     
     .charts-row, .tables-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
     }
 }
